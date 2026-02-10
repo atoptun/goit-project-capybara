@@ -150,4 +150,5 @@ goit-project-capybara/
 
 [imagecompressor.com](https://imagecompressor.com/)
 [compress-image.net](https://compress-image.net/)
-[imageconverter.com](https://imageconverter.com/)
+[imageconverter.com](https://imageconverter.com/) ======= Програма для
+оптимізації картинок https://squoosh.app/editor
