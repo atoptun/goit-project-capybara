@@ -1,11 +1,138 @@
 /* ========== ADVANTAGES ========== */
 
-
 @media screen and (min-width: 768px) {
-
 }
 
 @media screen and (min-width: 1280px) {
+}
 
+.proposal-container {
+  margin: 0 auto;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #4dc274, #bee8cc);
+}
+
+.title {
+  max-width: 776px;
+  padding-top: 64px;
+  padding-bottom: 72px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.16;
+  letter-spacing: 0em;
+  color: var(--bg-color-primary);
+  margin-left: 64px;
+}
+
+.high-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.16;
+  letter-spacing: 0em;
+  color: #bee8cc;
+}
+
+.proposal-card {
+  max-width: 1104px;
+  max-height: 604px;
+  position: relative;
+  overflow: visible;
+  padding-top: 60px;
+  padding-left: 50px;
+}
+
+.decor-1,
+.decor-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  z-index: 0;
+}
+
+.decor-1 {
+  max-width: 1050px;
+  max-height: 454px;
+  background: #a9dcbc;
+  transform: rotate(5deg);
+}
+
+.decor-2 {
+  max-width: 1050px;
+  max-height: 454px;
+  background: #bee8cc;
+  transform: rotate(-7deg);
+}
+
+.proposal-content {
+  max-height: 470px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--bg-color-primary);
+  border-radius: 30px;
+  max-width: 1024px;
+  margin-bottom: 142px;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.proposal-caption {
+  margin-top: 64px;
+  margin-left: 64px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+}
+
+.proposal-list {
+  max-width: 654px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 64px;
+  margin-bottom: 40px;
+  gap: 16px;
+}
+
+.proposal-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+}
+
+.proposal-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+}
+
+.btn-proposal {
+  display: inline-block;
+  background: rgb(var(--bg-color-secondary));
+  color: rgb(var(--text-color-secondary));
+  padding: 14px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 50px;
+  transition: 0.3s;
+}
+
+.btn-proposal:hover {
+  background: #3cab5d;
+}
+
+.proposal-image {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
 }
 /* ========== /ADVANTAGES ========== */
