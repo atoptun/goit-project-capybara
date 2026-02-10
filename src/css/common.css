@@ -1,0 +1,86 @@
+/* ========== COMMON ========== */
+
+body {
+  font-family: var(--font-primary);
+  color: rgb(var(--text-color-primary) / 0.5);
+  background-color: rgb(var(--bg-color-primary));
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-title {
+  margin-bottom: 16px;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--text-color-primary);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .section-title {
+    margin-bottom: 16px;
+
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .container {
+    max-width: 1280px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+/* ========== /COMMON ========== */
