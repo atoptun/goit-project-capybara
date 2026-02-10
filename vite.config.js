@@ -9,7 +9,19 @@ export default defineConfig(({ command }) => {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
+    base: '/goit-project-capybara/',
     root: 'src',
+
+    css: {
+      postcss: {
+        plugins: [
+          SortCss({
+            sort: 'mobile-first',
+          }),
+        ],
+      },
+    },
+
     build: {
       sourcemap: true,
       rollupOptions: {
@@ -27,9 +39,16 @@ export default defineConfig(({ command }) => {
             return '[name].js';
           },
           assetFileNames: assetInfo => {
-            if (assetInfo.name && assetInfo.name.endsWith('.html')) {
+            const assetName = assetInfo.names?.[0] || '';
+            
+            if (assetName.endsWith('.html')) {
               return '[name].[ext]';
             }
+            
+            // if (assetName.endsWith('.css')) {
+            //   return 'assets/[name].[ext]';
+            // }
+            
             return 'assets/[name]-[hash][extname]';
           },
         },
@@ -39,10 +58,7 @@ export default defineConfig(({ command }) => {
     },
     plugins: [
       injectHTML(),
-      FullReload(['./src/**/**.html']),
-      SortCss({
-        sort: 'mobile-first',
-      }),
+      FullReload(['./src/**/*.html']),
     ],
   };
 });

@@ -1,0 +1,13 @@
+/* ========== VARIABLES ========== */
+:root {
+  --font-primary: "Manrope", sans-serif;
+
+  --text-color-primary: 18 20 23;  /* #121417 */
+  --text-color-secondary: 255 255 255; /* #fff; */
+
+  --bg-color-primary: 255 255 255;  /* #fff; */
+  --bg-color-secondary: 77 194 116;  /* #4dc274; */
+
+  --transition-duration-and-func: 250ms ease-out;
+}
+/* ========== /VARIABLES ========== */
