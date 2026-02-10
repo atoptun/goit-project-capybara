@@ -96,15 +96,13 @@ body {
   /* Font */
   text-align: center;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0;
   color: rgb(var(--text-color-secondary));
 
   transition: background-color var(--transition-duration-and-func);
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background-color: rgb(var(--bg-color-dark-green));
 }
 
@@ -116,13 +114,13 @@ body {
 
     /* Font */
     font-size: 18px;
-    line-height: 28px;
+    line-height: 1.55;
   }
 }
 
 .btn--outline {
   background-color: transparent;
-  border: 1px solid rgb(var(--text-color-secondary));
+  border: 1px solid rgb(var(--text-color-secondary), 0.4);
   color: rgb(var(--text-color-secondary));
 
   transition:
@@ -130,7 +128,8 @@ body {
     color var(--transition-duration-and-func);
 }
 
-.btn--outline:hover {
+.btn--outline:hover,
+.btn--outline:focus {
   background-color: rgb(var(--text-color-secondary));
   color: var(--bg-color-secondary);
 }
