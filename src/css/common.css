@@ -43,7 +43,13 @@ body {
   line-height: 1.13;
   letter-spacing: -0.02em;
   text-align: center;
-  color: var(--text-color-primary);
+  color: rgb(var(--text-color-primary));
+}
+
+.section-subtitle {
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .section-title-underline {
@@ -90,6 +96,12 @@ body {
   .section-title-underline::after {
     bottom: -3px;
     height: 20px;
+  }
+
+  .section-subtitle {
+    font-size: 18px;
+
+    margin-bottom: 64px;
   }
 }
 
