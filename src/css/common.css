@@ -43,7 +43,30 @@ body {
   line-height: 1.13;
   letter-spacing: -0.02em;
   text-align: center;
-  color: var(--text-color-primary);
+  color: rgb(var(--text-color-primary));
+}
+
+.section-subtitle {
+  line-height: 1.7;
+  text-align: center;
+}
+
+.highlight-text span {
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.highlight-text span::after {
+  content: '';
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  bottom: 5px;
+  height: 12px;
+  background-color: #c2e9d1;
+  border-radius: 8px;
+  z-index: -1;
 }
 
 @media screen and (min-width: 768px) {
@@ -68,6 +91,10 @@ body {
 
     font-size: 40px;
     line-height: 1.2;
+  }
+
+  .section-subtitle {
+    font-size: 18px;
   }
 }
 
