@@ -144,8 +144,10 @@ goit-project-capybara/
 - ✅ Підтримка сучасних браузерів
 - ✅ Модульна архітектура HTML компонентів
 
-## Сервіси для картинок з пакетною обробкою
+## Сервіси для картинок
 
-https://imagecompressor.com/
-https://compress-image.net/
-https://imageconverter.com/
+Ці сервіси дозволяють пакетну обробку картинок
+
+[imagecompressor.com](https://imagecompressor.com/)
+[compress-image.net](https://compress-image.net/)
+[imageconverter.com](https://imageconverter.com/)
