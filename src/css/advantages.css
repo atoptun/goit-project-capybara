@@ -1,138 +1,287 @@
 /* ========== ADVANTAGES ========== */
 
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1280px) {
-}
-
 .proposal-container {
+  width: clamp(278px, calc(100vw - 40px), 335px);
+  min-height: 737px;
   margin: 0 auto;
-  border-radius: 30px;
+  position: relative;
   background: linear-gradient(90deg, #4dc274, #bee8cc);
+  padding-top: 40px;
+  padding-bottom: 64px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
 }
 
 .title {
-  max-width: 776px;
-  padding-top: 64px;
-  padding-bottom: 72px;
   font-weight: 700;
-  font-size: 60px;
-  line-height: 1.16;
+  font-size: 38px;
+  line-height: 1.05;
+  width: clamp(240px, calc(100vw - 40px), 295px);
   letter-spacing: 0em;
-  color: var(--bg-color-primary);
-  margin-left: 64px;
+  color: #ffffff;
+  padding: 0;
 }
 
 .high-title {
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 1.16;
-  letter-spacing: 0em;
   color: #bee8cc;
 }
 
-.proposal-card {
-  max-width: 1104px;
-  max-height: 604px;
-  position: relative;
-  overflow: visible;
-  padding-top: 60px;
-  padding-left: 50px;
-}
-
-.decor-1,
-.decor-2 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 30px;
-  z-index: 0;
-}
-
-.decor-1 {
-  max-width: 1050px;
-  max-height: 454px;
-  background: #a9dcbc;
-  transform: rotate(5deg);
-}
-
-.decor-2 {
-  max-width: 1050px;
-  max-height: 454px;
-  background: #bee8cc;
-  transform: rotate(-7deg);
-}
-
 .proposal-content {
-  max-height: 470px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background-color: var(--bg-color-primary);
-  border-radius: 30px;
-  max-width: 1024px;
-  margin-bottom: 142px;
-  z-index: 2;
+  min-height: 408px;
   position: relative;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 65px;
+  padding-top: 40px;
+  padding-left: 19px;
+  z-index: 10;
 }
 
 .proposal-caption {
-  margin-top: 64px;
-  margin-left: 64px;
+  font-size: 20px;
   font-weight: 700;
-  font-size: 40px;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  margin-bottom: 40px;
+  color: #121417;
 }
 
 .proposal-list {
-  max-width: 654px;
   display: flex;
   flex-direction: column;
-  margin-left: 64px;
-  margin-bottom: 40px;
   gap: 16px;
+  margin-top: 20px;
 }
 
 .proposal-item {
   display: flex;
-  gap: 12px;
-  align-items: flex-start;
-  line-height: 1.5;
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 0.02em;
+  gap: 8px;
+  align-items: center;
+}
+
+.proposal-block {
+  max-width: 20px;
+  max-height: 20px;
+  border-radius: 50%;
+  width: 100%;
+  background-color: #4dc274;
 }
 
 .proposal-icon {
-  flex-shrink: 0;
-  width: 28px;
-  height: 28px;
-}
-
-.btn-proposal {
-  display: inline-block;
-  background: rgb(var(--bg-color-secondary));
-  color: rgb(var(--text-color-secondary));
-  padding: 14px 28px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: 600;
-  margin-left: 50px;
-  transition: 0.3s;
-}
-
-.btn-proposal:hover {
-  background: #3cab5d;
+  stroke: #ffffff;
+  height: 8px;
+  width: 10px;
+  margin: 6px 5px;
 }
 
 .proposal-image {
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
+  display: none;
 }
+.proposal-paragraph {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.43;
+  letter-spacing: -0.02em;
+  padding: 0;
+  color: #121417;
+}
+
+.btn-proposal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 255px;
+  width: 100%;
+  height: 52px;
+  border-radius: 12px;
+  border: none;
+  padding: 14px 58px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #4dc274;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71;
+  text-align: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-proposal:hover,
+.btn-proposal:focus {
+  background: #38ae5f;
+}
+
+.decor-1 {
+  z-index: 7;
+  position: absolute;
+  display: flex;
+  max-width: 295px;
+  max-height: 408px;
+  width: 100%;
+  height: 100%;
+  top: 36%;
+  left: 7%;
+  transform: rotate(-9deg);
+  border-radius: 16px;
+  background: #d4fde1;
+}
+
+.decor-2 {
+  z-index: 6;
+  position: absolute;
+  display: flex;
+  max-width: 295px;
+  max-height: 408px;
+  width: 100%;
+  height: 100%;
+  top: 36%;
+  left: 7%;
+  transform: rotate(11deg);
+  border-radius: 16px;
+  background: #bee8cc;
+}
+
+@media screen and (min-width: 768px) {
+  .proposal-container {
+    width: 704px;
+    min-height: 950px;
+    padding-top: 64px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 93px;
+    border-radius: 30px;
+  }
+
+  .title {
+    font-size: 60px;
+    line-height: 1.17;
+    width: 640px;
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+
+  .proposal-content {
+    max-width: 668px;
+    height: 500px;
+    border-radius: 30px;
+    padding-top: 65px;
+    padding-left: 32px;
+    padding-bottom: 63px;
+    margin-top: 83px;
+  }
+
+  .proposal-caption {
+    font-size: 40px;
+    padding: 0;
+  }
+
+  .proposal-list {
+    max-width: 451px;
+    margin-top: 32px;
+  }
+
+  .proposal-content .proposal-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .proposal-block {
+    max-width: 28px;
+    max-height: 28px;
+  }
+
+  .proposal-icon {
+    height: 13px;
+    width: 16px;
+    margin: 7px 6px 8px 6px;
+  }
+
+  .proposal-paragraph {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .proposal-image {
+    position: absolute;
+    top: 35%;
+    left: 75%;
+  }
+
+  .btn-proposal {
+    width: 306px;
+    max-height: 60px;
+    padding: 16px 64px;
+    margin-top: 32px;
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  .decor-1 {
+    max-width: 668px;
+    max-height: 500px;
+    top: 38%;
+    left: 2.5%;
+    border-radius: 30px;
+  }
+  .decor-2 {
+    max-width: 668px;
+    max-height: 500px;
+    top: 38%;
+    left: 3.5%;
+    border-radius: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .proposal-container {
+    min-height: 950px;
+    width: 1152px;
+    padding-top: 77px;
+    padding-bottom: 142px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .title {
+    width: 776px;
+  }
+
+  .proposal-content {
+    max-width: 1024px;
+    height: 471px;
+    padding-left: 64px;
+    margin-top: 133px;
+  }
+
+  .proposal-list {
+    max-width: 664px;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .proposal-image {
+    top: 26%;
+    left: 79%;
+  }
+  .btn-proposal {
+    align-items: center;
+    margin-top: 39px;
+  }
+  .decor-1 {
+    max-width: 1050px;
+    max-height: 463px;
+    top: 38%;
+    left: 3.5%;
+  }
+  .decor-2 {
+    max-width: 1011px;
+    max-height: 402px;
+    top: 40%;
+    left: 5.5%;
+  }
+}
+
 /* ========== /ADVANTAGES ========== */
