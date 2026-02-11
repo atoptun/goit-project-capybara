@@ -70,9 +70,10 @@
   width: 100%;
   background-color: #4dc274;
 }
-
-.proposal-icon {
+.proposal-block.proposal-icon {
   stroke: #ffffff;
+}
+.proposal-icon {
   height: 8px;
   width: 10px;
   margin: 6px 5px;
@@ -206,6 +207,7 @@
   }
 
   .proposal-image {
+    display: block;
     position: absolute;
     top: 35%;
     left: 75%;
