@@ -185,6 +185,10 @@
     margin-top: 32px;
   }
 
+  .proposal-item {
+    gap: 16px;
+  }
+
   .proposal-content .proposal-item {
     display: flex;
     align-items: center;
