@@ -1,11 +1,57 @@
 /* ========== TEACHERS ========== */
 
+.teachers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.teacher-img {
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.teacher-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgb(var(--text-color-primary));
+
+  margin-bottom: 8px;
+}
+
+.teacher-description {
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+}
 
 @media screen and (min-width: 768px) {
+  .teachers-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
 
+  .teachers-item {
+    max-width: 272px;
+  }
+
+  .teacher-description {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  .teachers-list {
+    flex-wrap: nowrap;
+  }
 
+  .teachers-item {
+    max-width: 232px;
+  }
 }
 /* ========== /TEACHERS ========== */

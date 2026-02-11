@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-  min-width: 320px;
+  width: 100%;
   max-width: 375px;
   margin: 0 auto;
   padding-left: 20px;
@@ -43,7 +43,13 @@ body {
   line-height: 1.13;
   letter-spacing: -0.02em;
   text-align: center;
-  color: var(--text-color-primary);
+  color: rgb(var(--text-color-primary));
+}
+
+.section-subtitle {
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .section-title-underline {
@@ -91,6 +97,12 @@ body {
     bottom: -3px;
     height: 20px;
   }
+
+  .section-subtitle {
+    font-size: 18px;
+
+    margin-bottom: 64px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -105,4 +117,55 @@ body {
     padding-right: 64px;
   }
 }
+
+.btn {
+  display: inline-block;
+  margin: 0 auto;
+  min-width: min(295px, 100%);
+  min-height: 52px;
+  border-radius: 12px;
+  padding: 14px;
+  background-color: rgb(var(--bg-color-secondary));
+
+  /* Font */
+  text-align: center;
+  font-weight: 700;
+  color: rgb(var(--text-color-secondary));
+
+  transition: background-color var(--transition-duration-and-func);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: rgb(var(--bg-color-dark-green));
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    max-width: min(306px, 100%);
+    min-height: 60px;
+    padding: 16px;
+
+    /* Font */
+    font-size: 18px;
+    line-height: 1.55;
+  }
+}
+
+.btn--outline {
+  background-color: transparent;
+  border: 1px solid rgb(var(--text-color-secondary), 0.4);
+  color: rgb(var(--text-color-secondary));
+
+  transition:
+    background-color var(--transition-duration-and-func),
+    color var(--transition-duration-and-func);
+}
+
+.btn--outline:hover,
+.btn--outline:focus {
+  background-color: rgb(var(--text-color-secondary));
+  color: var(--bg-color-secondary);
+}
+
 /* ========== /COMMON ========== */
