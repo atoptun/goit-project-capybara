@@ -143,3 +143,11 @@ goit-project-capybara/
 - ✅ Оптимізація для продакшену
 - ✅ Підтримка сучасних браузерів
 - ✅ Модульна архітектура HTML компонентів
+
+## Сервіси для картинок
+
+Ці сервіси дозволяють пакетну обробку картинок
+
+[imagecompressor.com](https://imagecompressor.com/)
+[compress-image.net](https://compress-image.net/)
+[imageconverter.com](https://imageconverter.com/)
