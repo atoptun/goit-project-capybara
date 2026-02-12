@@ -64,19 +64,22 @@
 }
 
 .proposal-block {
-  max-width: 20px;
-  max-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  stroke: #ffffff;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  width: 100%;
   background-color: #4dc274;
 }
-.proposal-block.proposal-icon {
-  stroke: #ffffff;
-}
+
 .proposal-icon {
-  height: 8px;
-  width: 10px;
-  margin: 6px 5px;
+  height: 20px;
+  width: 20px;
+}
+.proposal-check-tablet {
+  display: none;
 }
 
 .proposal-image {
@@ -143,7 +146,7 @@
   left: 7%;
   transform: rotate(11deg);
   border-radius: 16px;
-  background: #bee8cc;
+  background: rgb(255 255 255/0.5);
 }
 
 @media screen and (min-width: 768px) {
@@ -205,9 +208,16 @@
   }
 
   .proposal-icon {
-    height: 13px;
-    width: 16px;
-    margin: 7px 6px 8px 6px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .proposal-check-mobile {
+    display: none;
+  }
+
+  .proposal-check-tablet {
+    display: inline;
   }
 
   .proposal-paragraph {
