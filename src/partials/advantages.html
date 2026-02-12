@@ -46,9 +46,15 @@
         </li>
       </ul>
       <picture>
-
-        <img class="proposal-image" src="./images/books/books.png" alt="Stack of English books" width="214"
-          height="264">
+        <!-- desktop -->
+        <source type="image/avif" srcset="./images/books/books.avif 1x, ./images/books/books.@2x.avif 2x"
+          media="(min-width: 1158px)" />
+        <!-- tablet -->
+        <source type="image/webp" srcset="./images/books/books.webp 1x, ./images/books/books.@2x.webp 2x"
+          media="(min-width: 768px)" />
+        <!-- mobile -->
+        <img class="proposal-image" src="./images/books/books.png" srcset="./images/books/books@2x.png 2x"
+          alt="Stack of English books" width="214" height="264" loading="lazy">
       </picture>
       <a href="#application" class="btn-proposal">
         Leave an application
