@@ -22,7 +22,7 @@
   line-height: 1.05;
   width: clamp(240px, calc(100vw - 40px), 295px);
   letter-spacing: 0em;
-  color: rgb 255 255 255;
+  color: rgb(255 255 255);
   padding: 0;
 }
 
@@ -33,7 +33,7 @@
 .proposal-content {
   min-height: 408px;
   position: relative;
-  background-color: rgb 255 255 255;
+  background-color: rgb(255 255 255);
   border-radius: 16px;
   padding: 20px;
   margin-top: 65px;
@@ -106,7 +106,7 @@
   border: none;
   padding: 14px 58px;
   margin-top: 20px;
-  color: rgb 255 255 255;
+  color: rgb(255 255 255);
   background-color: rgb(77 194 116);
   font-size: 14px;
   font-weight: 700;
