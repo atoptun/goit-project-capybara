@@ -100,7 +100,7 @@ body {
 
   .section-subtitle {
     font-size: 18px;
-
+    max-width: 704px;
     margin-bottom: 64px;
   }
 }
