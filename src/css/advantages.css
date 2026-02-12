@@ -5,7 +5,7 @@
   min-height: 737px;
   margin: 0 auto;
   position: relative;
-  background: linear-gradient(90deg, #4dc274, #bee8cc);
+  background: linear-gradient(90deg, rgb(77 194 116), rgb(190 232 204/0.5));
   padding-top: 40px;
   padding-bottom: 64px;
   padding-left: 20px;
@@ -22,7 +22,7 @@
   line-height: 1.05;
   width: clamp(240px, calc(100vw - 40px), 295px);
   letter-spacing: 0em;
-  color: #ffffff;
+  color: rgb 255 255 255;
   padding: 0;
 }
 
@@ -33,7 +33,7 @@
 .proposal-content {
   min-height: 408px;
   position: relative;
-  background-color: #ffffff;
+  background-color: rgb 255 255 255;
   border-radius: 16px;
   padding: 20px;
   margin-top: 65px;
@@ -47,7 +47,7 @@
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  color: #121417;
+  color: rgb(18 20 23);
 }
 
 .proposal-list {
@@ -67,12 +67,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  stroke: #ffffff;
+  stroke: rgb 255 255 255;
   fill: none;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #4dc274;
+  background-color: rgb(77 194 116);
 }
 
 .proposal-icon {
@@ -92,7 +92,7 @@
   line-height: 1.43;
   letter-spacing: -0.02em;
   padding: 0;
-  color: #121417;
+  color: rgb(18 20 23);
 }
 
 .btn-proposal {
@@ -106,8 +106,8 @@
   border: none;
   padding: 14px 58px;
   margin-top: 20px;
-  color: #ffffff;
-  background-color: #4dc274;
+  color: rgb 255 255 255;
+  background-color: rgb(77 194 116);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.71;
@@ -117,7 +117,7 @@
 
 .btn-proposal:hover,
 .btn-proposal:focus {
-  background: #38ae5f;
+  background: rgb(56 174 95);
 }
 
 .decor-1 {
@@ -132,7 +132,7 @@
   left: 7%;
   transform: rotate(-9deg);
   border-radius: 16px;
-  background: #d4fde1;
+  background: rgb(212 253 225);
 }
 
 .decor-2 {
