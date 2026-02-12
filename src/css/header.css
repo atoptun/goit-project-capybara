@@ -3,11 +3,9 @@
 .container-header {
   display: flex;
   justify-content: space-between;
-
-  justify-content: space-between;
 }
 
-.logo {
+.logo-header {
   padding-top: 20px;
   padding-bottom: 20px;
   line-height: 1.35;
@@ -17,7 +15,7 @@
   color: #121417;
 }
 
-.logo .logo-part {
+.logo-header .logo-part-header {
   font-weight: 700;
   font-size: 20px;
   color: rgb(77 194 116);
@@ -40,7 +38,7 @@
 .burger-btn {
   padding-top: 17.5px;
   padding-bottom: 17.5px;
-  margin-right: 20px;
+
   fill: none;
   stroke: rgb(18 20 23);
   background-color: transparent;
@@ -121,8 +119,11 @@
   .icon-header:hover,
   .icon-header:focus {
     fill: rgb(77 194 116);
-    border: rgb(77 194 116);
-    /* fill: var(--bg-color-secondary); */
+  }
+
+  .social-item-header:hover,
+  .social-item-header:focus {
+    border: 1px solid rgb(77 194 116/0.1);
   }
 
   .social-item-header {
@@ -136,7 +137,7 @@
   }
 
   .icon-header {
-    fill: #121417;
+    fill: rgb(18 20 23);
   }
 
   .burger-btn {
