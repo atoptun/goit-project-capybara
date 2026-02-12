@@ -1,11 +1,24 @@
 /* ========== ABOUT US ========== */
+
+/* Mobile */
+
 .section-about{
   padding-top: 80px;
 }
 
 
 
-.cont-ol{
+.about-subtitle{
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
+
+.container-about-list{
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -31,10 +44,12 @@
 
   width: 100%;
   max-width: 335px;
+
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.02em;
   font-weight: 700;
+
   color: rgb(var(--text-color-primary));
 
   position: relative;
@@ -49,18 +64,17 @@
   line-height: 1.14;
   letter-spacing: -0.02em;
   font-weight: 700;
-
 color: rgb(var(--bg-color-secondary));
   margin-bottom: 16px;
 
 }
 
-.cont-img{
+.container-img{
   width: 100%;
   max-width: 335px;
   height: auto;
-
   aspect-ratio: 335 / 313;
+
   background-color: rgb(var(--bg-color-secondary));
   border-radius: 16px;
 
@@ -76,6 +90,9 @@ color: rgb(var(--bg-color-secondary));
 
 }
 
+
+/* Tablet */
+
 @media screen and (min-width: 768px) {
   .section-about{
     padding-top: 100px;
@@ -83,8 +100,14 @@ color: rgb(var(--bg-color-secondary));
 
 
 
-  .cont-ol{
-   gap: 32px;
+  .about-subtitle{
+    max-width: 658px;
+  }
+
+
+
+  .container-about-list{
+    gap: 32px;
   }
 
   .about-list{
@@ -98,7 +121,7 @@ color: rgb(var(--bg-color-secondary));
     width: calc((100% - 1 * 32px) / 2);
   }
 
-  .cont-img{
+  .container-img{
     max-width: 704px;
     aspect-ratio: 704 / 243;
     border-radius: 30px;
@@ -106,16 +129,18 @@ color: rgb(var(--bg-color-secondary));
 
 }
 
+
+/* Desktop */
+
 @media screen and (min-width: 1280px) {
   .section-about{
     padding-top: 96px;
   }
 
-
-
-  .cont-ol{
+  .container-about-list{
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
+    align-items: flex-start;
     justify-content: center;
     gap: 32px;
   }
@@ -133,10 +158,10 @@ color: rgb(var(--bg-color-secondary));
 
   }
 
-  .cont-img{
+  .container-img{
     flex-shrink: 0;
-    width: 325px;
-    aspect-ratio: 325 / 352;
+    width: 310px;
+    aspect-ratio: 310 / 352;
   }
 
 }
