@@ -9,6 +9,7 @@
 .teacher-img {
   margin: 0 auto;
   margin-bottom: 16px;
+  border-radius: 50%;
 }
 
 .teacher-name {
