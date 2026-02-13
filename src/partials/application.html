@@ -16,9 +16,11 @@
       <div class="application-card-right">
         <form class="application-right-form">
           <div class="application-container-form">
-            <input class="application-right-input" type="text" placeholder="Name" required minlength="3">
-            <input class="application-right-input" type="email" placeholder="Email" required>
-            <input class="application-right-input" type="tel" placeholder="Phone" required minlength="9">
+            <input class="application-right-input" type="text" name="name" placeholder="Name" required pattern="(?=(?:.*[A-Za-z]){3,})[A-Za-z][A-Za-z0-9]*" maxlength="15"
+            title="Name must be 3 to 15 characters long, start with a letter, contain only Latin letters and digits, and include at least 3 letters">
+            <input class="application-right-input" type="email" name="email" placeholder="Email" required title="Please enter a valid email address">
+            <input class="application-right-input" type="tel" name="phone" placeholder="Phone" required pattern="^\+?[0-9]{7,}$" maxlength="10"
+            title="Phone number must contain at least 7 digits">
             <textarea class="application-right-textarea" name="user_comment" placeholder="Comment"></textarea>
           </div>
           <fieldset class="application-right-fieldset">
