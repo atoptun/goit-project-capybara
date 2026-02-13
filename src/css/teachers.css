@@ -28,12 +28,17 @@
   text-align: center;
 }
 
+.teachers-subtitle {
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 768px) {
   .teachers-list {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
+    padding: 0px 64px;
   }
 
   .teachers-item {
@@ -48,10 +53,11 @@
 @media screen and (min-width: 1280px) {
   .teachers-list {
     flex-wrap: nowrap;
+    padding: 0px;
   }
 
   .teachers-item {
-    max-width: 232px;
+    max-width: calc((100% - 32px * 3) / 4);
   }
 }
 /* ========== /TEACHERS ========== */
