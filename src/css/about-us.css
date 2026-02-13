@@ -1,11 +1,168 @@
 /* ========== ABOUT US ========== */
 
+/* Mobile */
 
-@media screen and (min-width: 768px) {
+.section-about{
+  padding-top: 80px;
+}
+
+
+
+.about-subtitle{
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
+
+.container-about-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  counter-reset: about;
+}
+
+.about-item{
+  counter-increment: about;
+
+  border-radius: 16px;
+  background-color: rgb(243 245 246);
+  padding: 32px;
+
+  width: 100%;
+  max-width: 335px;
+
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+
+  color: rgb(var(--text-color-primary));
+
+  position: relative;
 
 }
 
+.about-item::before {
+  content: counter(about, decimal-leading-zero);
+  display: block;
+
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+color: rgb(var(--bg-color-secondary));
+  margin-bottom: 16px;
+
+}
+
+.container-img{
+  width: 100%;
+  max-width: 335px;
+  height: auto;
+  aspect-ratio: 335 / 313;
+
+  background-color: rgb(var(--bg-color-secondary));
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.about-img{
+  width: 254px;
+  height: 211px;
+
+}
+
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+  .section-about{
+    padding-top: 100px;
+  }
+
+
+
+  .about-subtitle{
+    max-width: 658px;
+  }
+
+
+
+  .container-about-list{
+    gap: 32px;
+  }
+
+  .about-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .about-item{
+    border-radius: 30px;
+    width: calc((100% - 1 * 32px) / 2);
+  }
+
+  .container-img{
+    max-width: 704px;
+    aspect-ratio: 704 / 243;
+    border-radius: 30px;
+  }
+
+}
+
+
+/* Desktop */
+
 @media screen and (min-width: 1280px) {
+  .section-about{
+    padding-top: 96px;
+  }
+
+  .container-about-list{
+    flex-direction: row;
+    /* align-items: center; */
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .about-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: calc(2 * 325px + 32px);
+  }
+
+  .about-item{
+    width: 325px;
+    height: 160px;
+
+  }
+
+  .container-img{
+    flex-shrink: 0;
+    width: 310px;
+    aspect-ratio: 310 / 352;
+  }
 
 }
 /* ========== /ABOUT US ========== */
