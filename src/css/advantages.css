@@ -1,46 +1,59 @@
 /* ========== ADVANTAGES ========== */
 
 .proposal-container {
-  width: clamp(278px, calc(100vw - 40px), 335px);
-  min-height: 737px;
-  margin: 0 auto;
-  position: relative;
-  background: linear-gradient(80deg, rgb(77 194 116), rgba(129, 201, 153, 0.5));
-  padding-top: 40px;
-  padding-bottom: 64px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 40px 20px 64px 20px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  background: linear-gradient(80deg, rgb(77 194 116), rgb(129 201 153 / 0.5));
   border-radius: 16px;
 }
 
-.title {
+.proposal-title {
   font-weight: 700;
   font-size: 38px;
   line-height: 1.05;
-  width: clamp(240px, calc(100vw - 40px), 295px);
-  letter-spacing: 0em;
-  color: rgb(255 255 255);
-  padding: 0;
+  color: rgb(var(--text-color-secondary));
+  margin-bottom: 65px;
 }
 
-.high-title {
+.proposal-high-title {
   color: #bee8cc;
 }
 
-.proposal-content {
-  min-height: 408px;
+.proposal-content-wrapper {
   position: relative;
+  border-radius: 16px;
+  isolation: isolate;
+
+}
+.proposal-content-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 16px;
+  background: rgb(255 255 255 / 0.5);
+  transform: rotate(11deg);
+}
+
+.proposal-content-wrapper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: rgb(212 253 225);
+  transform: rotate(-9deg);
+  border-radius: 16px;
+}
+
+.proposal-content {
   background-color: rgb(255 255 255);
   border-radius: 16px;
-  padding: 20px;
-  margin-top: 65px;
-  padding-top: 40px;
-  padding-left: 19px;
-  z-index: 10;
+  padding: 40px 20px;
 }
+
+
+
+
 
 .proposal-caption {
   font-size: 20px;
