@@ -36,8 +36,6 @@
     justify-content: space-between;
     align-items: center;
 
-    height: 100%;
-    min-height: 640px;
     background-color: rgb(77 194 116);
     min-width: 240px;
     min-height: 812px;
@@ -46,9 +44,9 @@
   .mobile-menu-close-btn {
     position: absolute;
     top: 20px;
-    right: 32px;
-    width: 40px;
-    height: 40px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
 
     display: flex;
     justify-content: center;
@@ -58,8 +56,22 @@
     border-radius: 50%;
     background-color: transparent;
     border: none;
+    fill: none;
+  }
 
-    stroke: #fff;
+  .close-mobile {
+    height: 32px;
+    width: 32px;
+
+    color: rgb(255, 255, 255);
+  }
+
+  .close-small {
+    display: block;
+  }
+
+  .close-big {
+    display: none;
   }
 
   .nav-list-mobile {
@@ -99,6 +111,28 @@
   .mobile-menu-container {
     width: 384px;
     height: 1000px;
+  }
+
+  .close-small {
+    display: none;
+  }
+
+  .close-big {
+    display: inline;
+  }
+
+  .close-mobile {
+    height: 40px;
+    width: 40px;
+
+    display: block;
+  }
+
+  .mobile-menu-close-btn {
+    top: 20px;
+    right: 32px;
+    width: 40px;
+    height: 40px;
   }
 
   .social-item-mobile {
