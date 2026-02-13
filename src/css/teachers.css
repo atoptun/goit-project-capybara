@@ -9,6 +9,7 @@
 .teacher-img {
   margin: 0 auto;
   margin-bottom: 16px;
+  border-radius: 50%;
 }
 
 .teacher-name {
@@ -34,6 +35,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
+    padding: 0px 64px;
   }
 
   .teachers-item {
@@ -48,10 +50,16 @@
 @media screen and (min-width: 1280px) {
   .teachers-list {
     flex-wrap: nowrap;
+    padding: 0px;
   }
 
   .teachers-item {
-    max-width: 232px;
+    max-width: calc((100% - 32px * 3) / 4);
+  }
+
+  .teachers-subtitle {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /* ========== /TEACHERS ========== */
