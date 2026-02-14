@@ -54,15 +54,16 @@
 }
 
 .footer-social-link {
-  padding: 8px;
-  display: block;
-  width: 42px;
-  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
   border-radius: 10px;
   border: 1px solid rgb(var(--text-color-secondary) / 0.1);
   fill: rgb(var(--text-color-secondary) / 0.8);
-  align-items: center;
-  justify-content: center;
+
   transition:
     border var(--transition-duration-and-func),
     fill var(--transition-duration-and-func);
