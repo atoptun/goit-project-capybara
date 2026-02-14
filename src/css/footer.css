@@ -53,19 +53,25 @@
   margin-bottom: 40px;
 }
 
-.footer-social li {
+.footer-social-link {
   padding: 8px;
   display: block;
   width: 42px;
   height: 42px;
   border-radius: 10px;
   border: 1px solid rgb(var(--text-color-secondary) / 0.1);
+  fill: rgb(var(--text-color-secondary) / 0.8);
   align-items: center;
   justify-content: center;
+  transition:
+    border var(--transition-duration-and-func),
+    fill var(--transition-duration-and-func);
 }
 
-.footer-social-icon {
-  fill: rgb(var(--text-color-secondary) / 0.8);
+.footer-social-link:hover,
+.footer-social-link:focus {
+  border-color: rgb(var(--bg-color-secondary) / 0.2);
+  fill: rgb(var(--bg-color-secondary));
 }
 
 .footer-nav {
