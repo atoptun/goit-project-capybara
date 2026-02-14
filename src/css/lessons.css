@@ -1,9 +1,14 @@
 /* ========== OUR LESSONS ========== */
 
+.section-text {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
 .lessons-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
   align-items: center;
 }
 
@@ -16,19 +21,15 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 24px;
+  padding: 40px 20px;
   border-radius: 16px;
   background-color: rgb(var(--bg-color-primary));
   border: 1px solid rgb(var(--bg-color-secondary));
   text-align: center;
 }
 
-.lesson-card__header {
-  margin-bottom: 24px;
-}
-
 .lesson-card__title {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
@@ -37,6 +38,7 @@
 }
 
 .lesson-card__price {
+  margin-bottom: 40px;
   font-weight: 700;
   font-size: 32px;
   line-height: 1.12;
@@ -46,41 +48,120 @@
 
 .lesson-card__text {
   flex-grow: 1;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
   color: rgb(var(--text-color-primary) / 0.5);
   font-size: 14px;
   line-height: 1.71;
 }
 
+.lesson-card .btn {
+  width: 100%;
+  margin-top: auto;
+}
 .lesson-card--accent {
   background-color: rgb(var(--bg-color-secondary));
   border-color: rgb(var(--bg-color-secondary));
 }
-
 .lesson-card--accent .lesson-card__title,
 .lesson-card--accent .lesson-card__price {
   color: rgb(var(--text-color-secondary));
 }
-
 .lesson-card--accent .lesson-card__text {
   color: rgb(var(--text-color-secondary) / 0.7);
 }
 
 @media screen and (min-width: 768px) {
+.section-text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 64px;
+
+    padding: 0px 8px;
+
+    max-width: 665px;
+  }
   .lessons-list {
+    display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     gap: 32px;
   }
+.lessons-item {
+  width: 336px;
+  max-width: none;
+}
+
+.lesson-card {
+  height: 404px;
+  padding: 32px 16px;
+  border-radius: 30px;
+  border: 1px solid rgb(var(--bg-color-secondary));
+}
+
+.lesson-card__title {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.lesson-card__price {
+  font-size: 32px;
+  line-height: 1.375;
+  margin-bottom: 32px;
+}
+
+.lesson-card__text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
 }
 
 @media screen and (min-width: 1280px) {
+.section-text {
+    font-size: 18px;
+  }
   .lessons-list {
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+      gap: 32px;
     justify-content: center;
-    gap: 24px;
   }
 
   .lessons-item {
     width: 336px;
+    max-width: none;
+    }
+    
+    .lesson-card {
+      height: 404px;
+      padding: 32px 16px;
+      border-radius: 30px;
+      border: 1px solid rgb(var(--bg-color-secondary));
+    }
+    
+    .section-text {
+      text-align: center;
+      max-width: 665px;
+    }
+    
+    .lesson-card__title {
+      font-size: 20px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    
+    .lesson-card__price {
+      font-size: 32px;
+      line-height: 1.375;
+      margin-bottom: 16px;
+    }
+    
+    .lesson-card__text {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 32px;
   }
 }
 /* ========== /OUR LESSONS ========== */
