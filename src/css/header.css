@@ -14,6 +14,7 @@
   font-weight: 700;
   font-size: 20px;
   color: rgb(var(--text-color-primary));
+  outline: none;
 }
 
 .logo .logo-part {
@@ -40,6 +41,7 @@
   stroke: rgb(18 20 23);
   background-color: transparent;
   border: none;
+  outline: none;
 }
 
 .burger-icon {
@@ -92,6 +94,7 @@
     line-height: 1.29;
 
     color: rgb(var(--text-color-primary));
+    outline: none;
 
     transition: background-color var(--transition-duration-and-func);
   }
@@ -136,6 +139,7 @@
     width: 44px;
     height: 44px;
 
+    outline: none;
     transition: border var(--transition-duration-and-func),
       fill var(--transition-duration-and-func);
   }
