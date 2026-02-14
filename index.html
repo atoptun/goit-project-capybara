@@ -23,7 +23,7 @@
 
     <!-- <link rel="stylesheet" href="./css/main.css" /> -->
     <script type="module" crossorigin src="/goit-project-capybara/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-project-capybara/assets/index-CQpFhQ0k.css">
+    <link rel="stylesheet" crossorigin href="/goit-project-capybara/assets/index-O6Jwj2fA.css">
   </head>
   <body>
     <!-- ========== HEADER ========== -->
@@ -359,12 +359,144 @@
 <!-- ========== /TEACHERS ========== -->
 
       <!-- ========== APPLICATION ========== -->
-<section class="section">
+<section id="contact_us" class="section">
   <div class="container">
-    <h2 class="section-title">Leave an application</h2>
+    <h2 class="section-title">
+      Leave an <span class="section-title-underline">application</span>
+    </h2>
+    <p class="application-subtitle">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
+    <div class="application-card">
+      <div class="application-card-left">
+        <picture>
+          <source
+            type="image/avif"
+            srcset="/goit-project-capybara/assets/application-desktop-Dgs6mA4K.avif 1x, /goit-project-capybara/assets/application-desktop@2x-Cg84VEKH.avif 2x"
+          />
+
+          <source
+            type="image/webp"
+            srcset="/goit-project-capybara/assets/application-desktop-BI5_o2yx.webp 1x, /goit-project-capybara/assets/application-desktop@2x-DNb94U0u.webp 2x"
+          />
+
+          <img
+            class="application-left-img"
+            src="/goit-project-capybara/assets/application-desktop-D_qHmKvr.png"
+            srcset="/goit-project-capybara/assets/application-desktop@2x-CE01QxjJ.png 2x"
+            alt="Form filling illustration"
+            loading="lazy"
+          />
+        </picture>
+        <p class="application-left-first-sub">1000</p>
+        <p class="application-left-second-sub">
+          of our online English language lessons! This journey has been full of
+          discovery, growth and unforgettable moments, and we are happy to share
+          this joyful event with you.
+        </p>
+      </div>
+      <div class="application-card-right">
+        <form class="application-right-form">
+          <div class="application-container-form">
+            <label for="id_name" class="visually-hidden">Name</label>
+            <input
+              class="application-right-input"
+              type="text"
+              id="id_name"
+              name="name"
+              placeholder="Name"
+              required
+              minlength="3"
+              maxlength="50"
+            />
+            <label>
+              <input
+                class="application-right-input"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                title="Please enter a valid email address"
+              />
+            </label>
+            <label>
+              <input
+                class="application-right-input"
+                type="tel"
+                name="phone"
+                placeholder="Phone"
+                required
+                pattern="^\+?[0-9]{7,}$"
+                maxlength="15"
+                title="Phone number must contain at least 7 digits"
+              />
+            </label>
+            <textarea
+              class="application-right-textarea"
+              name="user_comment"
+              placeholder="Comment"
+            ></textarea>
+          </div>
+          <fieldset class="application-right-fieldset">
+            <legend class="application-choose-title">Choose a teacher</legend>
+            <label class="application-custom-radio">
+              <input
+                class="visually-hidden"
+                type="radio"
+                name="teacher"
+                value="Maria"
+              />
+              <span class="application-radio-btn"></span>
+              Maria
+            </label>
+            <label class="application-custom-radio">
+              <input
+                class="visually-hidden"
+                type="radio"
+                name="teacher"
+                value="Artem"
+              />
+              <span class="application-radio-btn"></span>
+              Artem
+            </label>
+            <label class="application-custom-radio">
+              <input
+                class="visually-hidden"
+                type="radio"
+                name="teacher"
+                value="Ilona"
+              />
+              <span class="application-radio-btn"></span>
+              Ilona
+            </label>
+            <label class="application-custom-radio">
+              <input
+                class="visually-hidden"
+                type="radio"
+                name="teacher"
+                value="Volodymyr"
+              />
+              <span class="application-radio-btn"></span>
+              Volodymyr
+            </label>
+          </fieldset>
+          <button class="btn application-right-btn" type="submit">Send</button>
+          <p class="application-sub-agreement">
+            By clicking on &#8220;Send&#8220; button, you agree to our
+            <a class="application-link-agreement">Privacy Policy</a>,
+            <span class="application-span-agreement"
+              >and allow Promodo to use this information for marketing
+              purposes.</span
+            >
+          </p>
+        </form>
+      </div>
+    </div>
   </div>
 </section>
 <!-- ========== /APPLICATION ========== -->
+
       <!-- ========== REVIEWS ========== -->
 <section class="section" id="reviews">
   <div class="container">
