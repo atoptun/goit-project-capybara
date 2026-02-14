@@ -25,18 +25,19 @@
 .application-right-input {
   width: 100%;
   height: 50px;
+  line-height: 1.50;
   border: 1px solid rgb(18 20 23 / 0.1);
   border-radius: 12px;
   padding: 16px 18px 16px 18px;
-
 }
 
 .application-right-input::placeholder {
   color: rgb(var(--text-color-primary));
 }
 
-.application-right-input:valid {
-  border-color: rgb(var(--bg-color-secondary));
+.application-right-input:focus {
+  outline: 1px solid rgb(var(--bg-color-secondary));
+  transition: outline var(--transition-duration-and-func);
 }
 
 .application-right-textarea {
@@ -46,6 +47,11 @@
   border-radius: 12px;
   padding: 16px 18px 60px 18px;
   resize: none;
+}
+
+.application-right-textarea:focus {
+  outline: 1px solid rgb(var(--bg-color-secondary));
+  transition: outline var(--transition-duration-and-func);
 }
 
 .application-right-textarea::placeholder {
@@ -70,15 +76,11 @@
   margin-bottom: 14px;
 }
 
-.application-radio-subtitle {
+.application-custom-radio {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: -0.02em;
   color: rgb(var(--text-color-primary));
-}
-
-.application-custom-radio input[type="radio"] {
-  display: none;
 }
 
 .application-custom-radio .application-radio-btn {
@@ -113,16 +115,17 @@
   border-color: rgb(var(--bg-color-secondary));
 }
 
+.application-custom-radio input[type="radio"]:not(:checked):focus-visible+.application-radio-btn {
+  box-shadow: 0 0 0 3px rgb(var(--bg-color-secondary) / 0.50);
+  transition: box-shadow var(--transition-duration-and-func);
+}
+
 .application-right-btn {
-  width: 100%;
-  height: 52px;
-  border-radius: 12px;
+  min-width: min(335px, 100%);
   border: none;
-  padding: 14px 150px;
-  background-color: rgb(var(--bg-color-secondary));
-  color: rgb(var(--text-color-secondary));
   margin-bottom: 16px;
 }
+
 
 .application-sub-agreement {
   font-size: 12px;
@@ -183,14 +186,14 @@
    margin-bottom: 16px;
  }
 
- .application-radio-subtitle {
+ .application-custom-radio {
    font-size: 18px;
    line-height: 1.33;
    
  }
 
  .application-right-btn {
-   height: 60px;
+   min-width: min(500px, 100%);
  }
 
 
@@ -235,7 +238,7 @@
  .application-left-second-sub {
     line-height: 1.50;
     text-align: center;
-    color: rgb(var(--text-color-secondary));
+    color: rgb(255 255 255 / 0.7);
     padding: 0 20px;
  }
  
