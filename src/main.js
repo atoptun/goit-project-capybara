@@ -3,8 +3,9 @@ import './css/main.css';
 if (import.meta.env.DEV) {
   import('./css/debug.css');
 
-  window.addEventListener('keydown', (e) => {
-    if (e.ctrlKey && e.altKey && e.key === 'd') { // Ctrl + D увімкне дебаг
+  window.addEventListener('keydown', e => {
+    if (e.ctrlKey && e.altKey && e.key === 'd') {
+      // Ctrl + D увімкне дебаг
       document.body.classList.toggle('debug-mode');
     }
   });

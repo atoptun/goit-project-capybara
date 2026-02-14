@@ -40,15 +40,15 @@ export default defineConfig(({ command }) => {
           },
           assetFileNames: assetInfo => {
             const assetName = assetInfo.names?.[0] || '';
-            
+
             if (assetName.endsWith('.html')) {
               return '[name].[ext]';
             }
-            
+
             // if (assetName.endsWith('.css')) {
             //   return 'assets/[name].[ext]';
             // }
-            
+
             return 'assets/[name]-[hash][extname]';
           },
         },
@@ -56,9 +56,6 @@ export default defineConfig(({ command }) => {
       outDir: '../dist',
       emptyOutDir: true,
     },
-    plugins: [
-      injectHTML(),
-      FullReload(['./src/**/*.html']),
-    ],
+    plugins: [injectHTML(), FullReload(['./src/**/*.html'])],
   };
 });
