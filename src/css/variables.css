@@ -10,6 +10,8 @@
   --bg-color-secondary: 77 194 116;  /* #4dc274; */
   --bg-color-dark-green: 56 174 95;  /* #38ae5f; */
 
+  --bg-color-footer: 18 20 23;  /* #121417; */
+
   --transition-duration-and-func: 250ms ease-out;
 }
 /* ========== /VARIABLES ========== */
