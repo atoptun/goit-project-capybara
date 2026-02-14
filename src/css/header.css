@@ -1,4 +1,7 @@
 /* ========== HEADER ========== */
+.header {
+  margin-bottom: 8px;
+}
 
 .container-header {
   display: flex;
@@ -55,8 +58,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    margin-bottom: 32px;
+  }
+
   .logo {
-    margin-right: 32px;
     padding-top: 20.5px;
     padding-bottom: 20.5px;
   }
@@ -75,6 +81,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .header {
+    margin-bottom: 16px;
+  }
+  
   .header .logo {
     margin-right: 138px;
   }
@@ -112,9 +122,9 @@
     transform: scaleX(0);
     opacity: 0;
 
-    transition: opacity var(--transition-duration-and-func),
-      transform var(--transition-duration-and-func)
-    ;
+    transition:
+      opacity var(--transition-duration-and-func),
+      transform var(--transition-duration-and-func);
   }
 
   .header-nav-link:hover::after,
@@ -140,7 +150,8 @@
     height: 44px;
 
     outline: none;
-    transition: border var(--transition-duration-and-func),
+    transition:
+      border var(--transition-duration-and-func),
       fill var(--transition-duration-and-func);
   }
 
