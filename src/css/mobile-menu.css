@@ -1,14 +1,15 @@
 /* ========== MOBILE MENU ========== */
-@media screen and (max-width: 1279px) {
+@media screen and (min-width: 200px) and (max-width: 1279px) {
   .mobile-menu {
     position: fixed;
-    top: 0;
+    inset: 0;
+    /* top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%; */
     z-index: 999;
 
-    background-color: rgb(var(--bg-color-primary));
+    background-color: rgba(18 20 23 / 0.4);
 
     opacity: 0;
     visibility: hidden;
@@ -28,17 +29,17 @@
   .mobile-menu-container {
     position: absolute;
 
-    top: 0;
-    right: 0;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
-    background-color: rgb(77 194 116);
+    top: 0;
+    right: 0;
     min-width: 240px;
-    min-height: 812px;
+    height: 100%;
+
+    background-color: rgb(var(--bg-color-secondary));
   }
 
   .mobile-menu-close-btn {
@@ -53,45 +54,50 @@
     align-items: center;
 
     padding: 0;
-    border-radius: 50%;
     background-color: transparent;
     border: none;
+
     fill: none;
+    stroke: rgb(255, 255, 255);
   }
 
-  .close-mobile {
+  .close-mobile-icon {
     height: 32px;
     width: 32px;
-
-    color: rgb(255, 255, 255);
   }
 
-  .close-small {
+  /* .close-small {
     display: block;
-  }
+  } */
 
   .close-big {
     display: none;
   }
 
+  .mobile-menu-nav {
+    margin-top: 248px;
+  }
+
   .nav-list-mobile {
     display: flex;
-    margin-top: 248px;
-
     flex-direction: column;
     align-items: center;
     gap: 20px;
+  }
+
+  .nav-link-mobile {
     font-weight: 600;
     font-size: 14px;
     line-height: 1.3;
-    color: #fff;
+    color: rgb(var(--text-color-secondary));
+
   }
 
   .social-mobile {
     display: flex;
     justify-content: center;
-    flex-direction: row;
     gap: 12px;
+
     margin-bottom: 20px;
   }
 
@@ -107,26 +113,19 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .mobile-menu-container {
-    width: 384px;
-    height: 1000px;
+    min-width: 384px;
+    /* height: 1000px; */
   }
 
-  .close-small {
+  /* .close-small {
     display: none;
-  }
+  } */
 
-  .close-big {
+  /* .close-big {
     display: inline;
-  }
-
-  .close-mobile {
-    height: 40px;
-    width: 40px;
-
-    display: block;
-  }
+  } */
 
   .mobile-menu-close-btn {
     top: 20px;
@@ -135,10 +134,20 @@
     height: 40px;
   }
 
+  .close-mobile-icon {
+    height: 40px;
+    width: 40px;
+  }
+
   .social-item-mobile {
     width: 44px;
     height: 44px;
   }
+
+  .mobile-menu-nav {
+    margin-top: 337px;
+  }
+
 }
 
 @media screen and (min-width: 1280px) {
