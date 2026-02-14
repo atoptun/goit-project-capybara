@@ -7,7 +7,6 @@
 .proposal-container {
   background: linear-gradient(80deg, rgb(77 194 116), rgb(129 201 153 / 0.5));
   border-radius: 16px;
-  padding-top: 40px;
 }
 
 .proposal-content {
@@ -19,14 +18,14 @@
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
   .proposal-container {
-    padding-top: 40px;
+    padding-bottom: 30px;
   }
-
   .proposal-content {
     max-width: 296px;
   }
 
   .proposal-title {
+    padding-top: 40px;
     font-weight: 700;
     font-size: 38px;
     line-height: 1.05;
@@ -46,7 +45,11 @@
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    margin-bottom: 30px;
+    left: -10px;
+  }
+  .proposal-content {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .proposal-caption {
@@ -248,10 +251,7 @@
 @media screen and (min-width: 768px) {
   .container {
     padding: 0;
-  }
-
-  .section {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 
   .proposal-container {
@@ -273,7 +273,7 @@
 
   .proposal-title {
     letter-spacing: 0;
-    font-size: 40px;
+    font-size: 60px;
     line-height: 1.17;
     padding-top: 64px;
     padding-left: 32px;
@@ -283,10 +283,6 @@
 
   .proposal-high-title {
     color: #bee8cc;
-  }
-
-  .proposal-box {
-    margin-bottom: 30px;
   }
 
   .proposal-content {
@@ -301,7 +297,7 @@
     line-height: 1.2;
     letter-spacing: -0.02em;
     color: rgb(18 20 23);
-    margin-top: 80px;
+    margin-top: 63px;
     font-size: 40px;
     margin-bottom: 32px;
   }
