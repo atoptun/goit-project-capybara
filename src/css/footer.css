@@ -1,16 +1,21 @@
 /* ========== FOOTER ========== */
 
 .footer {
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px;
   background-color: rgb(var(--bg-color-footer));
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .footer-logo {
   font-weight: 700;
   font-size: 20px;
-  line-height: 100%;
-  letter-spacing: 0%;
+  line-height: 1.35;
   color: rgb(var(--text-color-secondary));
   margin-bottom: 20px;
 }
@@ -19,22 +24,25 @@
   color: rgb(var(--bg-color-secondary));
 }
 
+.footer-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .footer-label {
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
-  letter-spacing: -2%;
-  color: rgb(var(--text-color-secondary));
-  opacity: 54%;
-  margin-top: 16px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgb(var(--text-color-secondary) / 0.54);
 }
 
 .footer-phone,
 .footer-address {
   font-weight: 600;
   font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0%;
+  line-height: 1.29;
   color: rgb(var(--text-color-secondary));
 }
 
@@ -56,44 +64,40 @@
 }
 
 .footer-social-icon {
-  fill: rgb(var(--text-color-secondary));
-  opacity: 80%;
+  fill: rgb(var(--text-color-secondary) / 0.8);
 }
 
 .footer-nav {
-  margin: 40px 0;
+  display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .footer-nav-item {
   font-weight: 600;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
   color: rgb(var(--text-color-secondary));
-}
-
-.footer-nav-item:not(:first-child) {
-  margin-top: 20px;
 }
 
 .footer-divider {
   border: none;
   height: 1px;
   background-color: rgba(var(--text-color-secondary) / 0.1);
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
 .footer-bottom {
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
-  letter-spacing: -2%;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
   color: rgb(var(--text-color-secondary) / 0.54);
-  margin-top: 20px;
 }
 
 .footer-copyright {
   margin-right: auto;
+  margin-bottom: 14px;
 }
 
 .footer-doc-link:not(:last-child) {
@@ -106,8 +110,9 @@
     padding-bottom: 16px;
   }
 
-  .footer .footer-content {
+  .footer-content {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin-bottom: 110px;
   }
@@ -116,9 +121,16 @@
     margin: 0;
   }
 
+  .footer-divider {
+    margin-bottom: 16px;
+  }
+
   .footer-bottom {
     display: flex;
-    margin-top: 16px;
+  }
+
+  .footer-copyright {
+    margin-bottom: 0;
   }
 }
 
@@ -130,6 +142,10 @@
 
   .footer .footer-content {
     margin-bottom: 64px;
+  }
+
+  .footer-divider {
+    margin-bottom: 23px;
   }
 }
 /* ========== /FOOTER ========== */
