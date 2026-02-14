@@ -10,6 +10,7 @@
 }
 
 .proposal-content {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,13 +46,6 @@
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 30px;
-  }
-
-  .proposal-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 296px;
   }
 
   .proposal-caption {
@@ -172,9 +166,6 @@
 
   .proposal-content {
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     max-width: 296px;
   }
 
@@ -298,9 +289,6 @@
   }
 
   .proposal-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     position: relative;
     overflow: visible;
     max-width: 668px;
@@ -425,9 +413,8 @@
   .proposal-box {
     background: url(../images/proposal-box/proposal-box:desc@1x.png) no-repeat
       center/cover;
-    display: flex;
     justify-content: start;
-    align-items: center;
+
     margin: 0 auto;
     min-height: 607px;
     max-width: 1104px;
@@ -435,10 +422,7 @@
   }
 
   .proposal-content {
-    display: flex;
-    flex-direction: column;
     padding-left: 64px;
-
     margin-top: 0;
   }
 
