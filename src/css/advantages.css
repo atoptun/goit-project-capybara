@@ -3,6 +3,7 @@
   padding-left: 0px;
   padding-right: 0px;
 }
+
 .proposal-container {
   background: linear-gradient(80deg, rgb(77 194 116), rgb(129 201 153 / 0.5));
   border-radius: 16px;
@@ -143,7 +144,6 @@
   }
   .proposal-container {
     margin: 0 auto;
-    padding-top: 20px;
     padding-bottom: 20px;
     max-width: 335px;
   }
@@ -249,6 +249,7 @@
   .container {
     padding: 0;
   }
+
   .section {
     margin-bottom: 30px;
   }
@@ -271,9 +272,9 @@
   }
 
   .proposal-title {
-    font-size: 60px;
+    letter-spacing: 0;
+    font-size: 40px;
     line-height: 1.17;
-    width: 640px;
     padding-top: 64px;
     padding-left: 32px;
     margin-bottom: 32px;
