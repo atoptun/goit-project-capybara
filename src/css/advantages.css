@@ -318,11 +318,19 @@
   }
 
   .proposal-list {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
     margin-bottom: 32px;
   }
 
   .proposal-item {
     width: 451px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 16px;
   }
 
@@ -330,8 +338,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 28px;
+    stroke: rgb(255 255 255);
+    fill: none;
+    width: 28px;
     height: 28px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: rgb(77 194 116);
   }
 
   .proposal-icon {
@@ -375,7 +388,7 @@
   .proposal-image {
     position: absolute;
     top: 35%;
-    left: 75%;
+    left: 100%;
   }
 }
 
@@ -393,52 +406,69 @@
   .container {
     padding: 0;
   }
+
   .proposal-container {
     margin: 0 auto;
-    padding-top: 64px;
     padding-bottom: 69px;
     max-width: 1152px;
   }
 
   .proposal-title {
-    margin-bottom: 33px;
-    padding-left: 32px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    padding-left: 64px;
+    width: 830px;
   }
 
   .proposal-box {
     background: url(../images/proposal-box/proposal-box:desc@1x.png) no-repeat
       center/cover;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     margin: 0 auto;
-    padding-left: 105px;
     min-height: 607px;
     max-width: 1104px;
     position: relative;
   }
 
   .proposal-content {
-    max-width: 657px;
-    margin-right: 92px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 64px;
+
     margin-top: 0;
   }
 
+  .proposal-caption {
+    margin-top: 64px;
+    margin-bottom: 40px;
+  }
+
   .proposal-list {
-    max-width: 654px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
     gap: 16px;
     margin-bottom: 39px;
   }
 
+  .proposal-item {
+    width: 654px;
+  }
+
   .proposal-image {
+    position: absolute;
     top: 26%;
-    left: 79%;
+    left: 120%;
   }
 
   .btn-proposal {
     align-items: center;
-    margin-top: 39px;
   }
+
   @media screen and (min-width: 1280px) and (min-resolution: 192dpi),
     (min-width: 1280px) and (min-resolution: 2dppx),
     (min-width: 1280px) and (min-device-pixel-ratio: 2) {
