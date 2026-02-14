@@ -36,7 +36,12 @@
 
 
         <symbol id="check" viewBox="0 0 20 20">
-            <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M16.6667 5 7.5 14.1667 3.3333 10" />
+            <path stroke-width="2" stroke-linecap="round" 
+            stroke-linejoin="round" d="M16.6667 5 7.5 14.1667 3.3333 10" />
+        </symbol>
+        <symbol id="check-1" viewBox="0 0 32 32">
+            <path d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M22.4 11.2l-8.8 9.6-4-4.364"></path>
         </symbol>
         <symbol id="burger-small" viewBox="0 0 32 32" stroke-width="3" stroke-linecap="round">
             <line x1="6.36963" x2="30.5001" y1="8.37878" y2="8.37878" />

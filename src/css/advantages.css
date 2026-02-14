@@ -1,11 +1,295 @@
 /* ========== ADVANTAGES ========== */
 
+.proposal-container {
+  padding: 40px 20px 64px 20px;
+  overflow: hidden;
+  background: linear-gradient(80deg, rgb(77 194 116), rgb(129 201 153 / 0.5));
+  border-radius: 16px;
+}
+
+.proposal-title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.05;
+  color: rgb(var(--text-color-secondary));
+  margin-bottom: 65px;
+}
+
+.proposal-high-title {
+  color: #bee8cc;
+}
+
+.proposal-content-wrapper {
+  position: relative;
+  max-width: 295px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 16px;
+  isolation: isolate;
+}
+.proposal-content-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 16px;
+  background: rgb(255 255 255 / 0.5);
+  transform: rotate(11deg);
+}
+
+.proposal-content-wrapper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: rgb(212 253 225);
+  transform: rotate(-9deg);
+  border-radius: 16px;
+}
+
+.proposal-content {
+  background-color: rgb(255 255 255);
+  border-radius: 16px;
+  padding: 40px 20px;
+}
+
+.proposal-caption {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: rgb(18 20 23);
+
+  margin-bottom: 20px;
+}
+
+.proposal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin-bottom: 20px;
+}
+
+.proposal-item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.proposal-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  stroke: rgb(255 255 255);
+  fill: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(77 194 116);
+}
+
+.proposal-icon {
+  height: 20px;
+  width: 20px;
+}
+.proposal-check-tablet {
+  display: none;
+}
+
+.proposal-image {
+  display: none;
+}
+
+.proposal-paragraph {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.43;
+  letter-spacing: -0.02em;
+  padding: 0;
+  color: rgb(18 20 23);
+}
+/* 
+.btn-proposal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 255px;
+  width: 100%;
+  height: 52px;
+  border-radius: 12px;
+  border: none;
+  padding: 14px 58px;
+  margin-top: 20px;
+  color: rgb(255 255 255);
+  background-color: rgb(77 194 116);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71;
+  text-align: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-proposal:hover,
+.btn-proposal:focus {
+  background: rgb(56 174 95);
+} */
+
+.btn-proposal {
+}
 
 @media screen and (min-width: 768px) {
+  .proposal-container {
+    padding: 64px 14px 93px 14px;
+    border-radius: 30px;
+  }
 
+  .proposal-title {
+    font-size: 60px;
+    line-height: 1.17;
+    max-width: 640px;
+    margin-bottom: 83px;
+  }
+
+  .proposal-content-wrapper {
+    max-width: 668px;
+    border-radius: 30px;
+  }
+
+  .proposal-content-wrapper::before {
+    /* transform: rotate(10.65deg); */
+    border-radius: 30px;
+  }
+
+  .proposal-content-wrapper::after {
+    border-radius: 30px;
+    /* transform: rotate(-9.86deg); */
+  }
+
+  .proposal-caption {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
+
+  .proposal-content {
+    /* display: flex;
+    flex-direction: column; */
+    position: relative;
+    overflow: visible;
+
+    /* max-width: 668px; */
+    /* height: 500px; */
+    border-radius: 30px;
+    padding: 64px 32px;
+    /* padding-top: 65px;
+    padding-left: 32px;
+    padding-bottom: 63px; */
+  }
+
+  .proposal-list {
+    max-width: 451px;
+    margin-bottom: 32px;
+  }
+
+  .proposal-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .proposal-block {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+  }
+
+  .proposal-icon {
+    height: 20px;
+    width: 20px;
+  }
+
+  .proposal-check-mobile {
+    display: none;
+  }
+
+  .proposal-check-tablet {
+    display: inline;
+  }
+
+  .proposal-paragraph {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .btn-proposal {
+    min-width: 306px;
+    margin-left: 0;
+  }
+
+  .proposal-image {
+    display: block;
+    position: absolute;
+    top: 175px;
+    /* left: 503px; */
+    right: -50px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  .proposal-container-mod {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .proposal-container {
+    min-height: 950px;
+    width: 1152px;
+    padding: 64px 64px 142px 64px;
+    /* padding-top: 64px;
+    padding-bottom: 142px;
+    padding-left: 64px; */
+  }
+
+  .proposal-title {
+    max-width: 776px;
+    margin-bottom: 133px;
+  }
+
+  .proposal-content-wrapper {
+    max-width: 1024px;
+  }
+
+  .proposal-content-wrapper::before {
+    /* transform: rotate(11deg); */
+  }
+
+  .proposal-content-wrapper::after {
+    /* transform: rotate(-8deg); */
+  }
+
+  .proposal-content {
+    /* max-width: 1024px; */
+    /* height: 471px; */
+    padding-left: 64px;
+  }
+
+  .proposal-caption {
+    margin-bottom: 40px;
+  }
+
+  .proposal-list {
+    max-width: 654px;
+    gap: 16px;
+
+    margin-bottom: 39px;
+  }
+
+  .proposal-image {
+    top: 130px;
+    right: 0;
+    /* left: 79%; */
+  }
 
 }
+
 /* ========== /ADVANTAGES ========== */
