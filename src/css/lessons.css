@@ -124,7 +124,7 @@
   .lessons-list {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
       gap: 32px;
     justify-content: center;
   }
