@@ -36,6 +36,7 @@ if (import.meta.env.DEV) {
   }
 
   sectionsObserver();
+  mediaChangeObserver();
 })();
 
 function sectionsObserver() {
@@ -83,4 +84,21 @@ function sectionsObserver() {
       navLinks[navLinks.length - 1].classList.add('current');
     }
   });
+}
+
+function mediaChangeObserver() {
+  function handleTabletChange(e) {
+    if (e.matches) {
+      document.body.classList.remove('is-menu-open');
+
+      const mobileMenu = document.querySelector('[data-mobile-menu]');
+      if (mobileMenu) {
+        mobileMenu.classList.remove('is-open');
+      }
+    }
+  }
+
+  const mediaQuery = window.matchMedia('(min-width: 1280px)');
+  mediaQuery.addEventListener('change', handleTabletChange);
+  handleTabletChange(mediaQuery);
 }
