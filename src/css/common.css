@@ -1,4 +1,7 @@
 /* ========== COMMON ========== */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--font-primary);
@@ -6,6 +9,12 @@ body {
   background-color: rgb(var(--bg-color-primary));
   font-size: 14px;
   line-height: 1.71;
+}
+
+body.is-menu-open {
+  overflow: hidden;
+  touch-action: none;
+  height: 100vh;
 }
 
 .visually-hidden {
@@ -53,6 +62,9 @@ section[id] {
 .section-subtitle {
   line-height: 1.7;
   text-align: center;
+
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 40px;
 }
 
@@ -109,9 +121,6 @@ section[id] {
   .section-subtitle {
     font-size: 18px;
     max-width: 704px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
     margin-bottom: 64px;
   }
 }

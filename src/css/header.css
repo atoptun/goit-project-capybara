@@ -1,17 +1,23 @@
 /* ========== HEADER ========== */
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 900;
-  
-  background-color: #fff;
 
-    border-bottom: 1px solid rgb(231 233 252);
-    box-shadow:
-      0 1px 6px 0 rgb(18 20 23 / 0.08),
-      0 1px 1px 0 rgb(18 20 23 / 0.16),
-      0 2px 1px 0 rgb(18 20 23 / 0.08);  
+  margin-bottom: 16px;
+
+  background-color: rgb(255 255 255);
+  border-bottom: 1px solid rgb(var(--bg-color-dark-green) / 0.1);
+
+  transition: box-shadow 250ms ease;
+}
+
+.header.is-scrolled {
+  box-shadow:
+    0 1px 6px rgb(var(--bg-color-footer) / 0.1),
+    0 1px 1px rgb(var(--bg-color-footer) / 0.1),
+    0 2px 2px rgb(var(--bg-color-footer) / 0.1);
 }
 
 .container-header {
@@ -70,7 +76,7 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
 
   .logo {
@@ -92,9 +98,9 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .header {
+  /* .header {
     margin-bottom: 16px;
-  }
+  } */
 
   .header .logo {
     margin-right: 138px;

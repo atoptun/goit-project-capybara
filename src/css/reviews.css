@@ -91,6 +91,10 @@
     padding-bottom: 100px;
   }
 
+  .reviews-subtitle {
+    max-width: 647px;
+  }
+
   .reviews-list {
     justify-content: center;
     gap: 32px;

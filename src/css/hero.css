@@ -6,16 +6,16 @@
   max-width: 335px;
   padding-top: 425px;
   padding-bottom: 72px;
-  margin-top: 75px;
+  /* margin-top: 75px; */
   margin-left: auto;
   margin-right: auto;
 
   /* fallback */
   background-image: url('/images/hero/bg-hero-mobile.jpg');
-    background-image: -webkit-image-set(
-      url(/images/hero/webp/bg-hero-mobile.webp) 1x,
-      url(/images/hero/webp/bg-hero-mobile@2x.webp) 2x
-    );
+  background-image: -webkit-image-set(
+    url(/images/hero/webp/bg-hero-mobile.webp) 1x,
+    url(/images/hero/webp/bg-hero-mobile@2x.webp) 2x
+  );
   background-image: image-set(
     url('/images/hero/avif/bg-hero-mobile.avif') type('image/avif') 1x,
     url('/images/hero/avif/bg-hero-mobile@2x.avif') type('image/avif') 2x,
@@ -34,7 +34,7 @@
 /* Tablet  */
 @media screen and (min-width: 768px) {
   .hero-section {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     padding-top: 260px;
     padding-bottom: 295px;
     max-width: 704px;
@@ -85,6 +85,8 @@
 
 .hero-container {
   position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .hero-title {
@@ -95,6 +97,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   .hero-title {
     margin-bottom: 32px;
     font-size: 60px;
@@ -104,6 +111,11 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .hero-container {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
   .hero-title {
     max-width: 564px;
   }
