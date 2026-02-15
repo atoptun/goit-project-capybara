@@ -6,11 +6,11 @@
   padding-top: 80px;
 }
 
-.about-subtitle {
+/* .about-subtitle {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-}
+} */
 
 .container-about-list {
   display: flex;

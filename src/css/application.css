@@ -1,10 +1,7 @@
 /* ========== APPLICATION ========== */
 
 .application-subtitle {
-  font-size: 14px;
-  line-height: 1.71;
-  text-align: center;
-  margin: 0 auto 20px;
+  margin-bottom: 20px;
 }
 
 .application-card-left {
@@ -157,11 +154,8 @@
 
 @media screen and (min-width: 768px) {
   .application-subtitle {
-    font-size: 18px;
-    line-height: 1.67;
-    text-align: center;
     max-width: 586px;
-    margin: 0 auto 64px;
+    margin-bottom: 64px;
   }
 
   .application-card-right {
@@ -210,9 +204,9 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .application-subtitle {
+  /* .application-subtitle {
     max-width: 709px;
-  }
+  } */
 
   .application-card {
     display: flex;

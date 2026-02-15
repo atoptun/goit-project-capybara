@@ -1,6 +1,6 @@
 /* Common styles */
 /* @import url('./debug.css'); */
-@import "modern-normalize";
+@import 'modern-normalize';
 
 @import url('./variables.css');
 @import url('./reset.css');

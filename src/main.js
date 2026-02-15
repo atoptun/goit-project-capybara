@@ -1,9 +1,9 @@
-
 if (import.meta.env.DEV) {
   import('./css/debug.css');
 
   window.addEventListener('keydown', e => {
-    if (e.ctrlKey && e.altKey && e.key === 'd') { // Ctrl + Alt + D -- turn on debug mode
+    if (e.ctrlKey && e.altKey && e.key === 'd') {
+      // Ctrl + Alt + D -- turn on debug mode
       document.body.classList.toggle('debug-mode');
     }
   });
@@ -67,7 +67,14 @@ function sectionsObserver() {
     observer.observe(section);
   });
 
+  const header = document.querySelector('header');
   window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+      header.classList.add('is-scrolled');
+    } else {
+      header.classList.remove('is-scrolled');
+    }
+
     if (
       window.innerHeight + window.scrollY >=
       document.body.offsetHeight - 10
