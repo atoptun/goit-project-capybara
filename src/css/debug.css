@@ -23,14 +23,14 @@ body.debug-mode img:not([alt]) {
 }
 
 /* Порожні посилання або кнопки */
-body.debug-mode a:empty, 
+body.debug-mode a:empty,
 body.debug-mode button:empty {
   outline: 5px solid orange !important;
 }
 
 /* Посилання, які ведуть в нікуди */
-body.debug-mode a[href="#"], 
-body.debug-mode a[href=""] {
+body.debug-mode a[href='#'],
+body.debug-mode a[href=''] {
   background: yellow !important;
   border: 2px dashed black !important;
 }

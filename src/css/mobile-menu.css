@@ -90,7 +90,6 @@
     font-size: 14px;
     line-height: 1.3;
     color: rgb(var(--text-color-secondary));
-
   }
 
   .social-mobile {
@@ -147,7 +146,6 @@
   .mobile-menu-nav {
     margin-top: 337px;
   }
-
 }
 
 @media screen and (min-width: 1280px) {

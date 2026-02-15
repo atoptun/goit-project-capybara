@@ -1,6 +1,17 @@
 /* ========== HEADER ========== */
 .header {
-  margin-bottom: 8px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 900;
+  
+  background-color: #fff;
+
+    border-bottom: 1px solid rgb(231 233 252);
+    box-shadow:
+      0 1px 6px 0 rgb(18 20 23 / 0.08),
+      0 1px 1px 0 rgb(18 20 23 / 0.16),
+      0 2px 1px 0 rgb(18 20 23 / 0.08);  
 }
 
 .container-header {
@@ -84,7 +95,7 @@
   .header {
     margin-bottom: 16px;
   }
-  
+
   .header .logo {
     margin-right: 138px;
   }

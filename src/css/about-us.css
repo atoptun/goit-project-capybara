@@ -2,29 +2,23 @@
 
 /* Mobile */
 
-.section-about{
+.section-about {
   padding-top: 80px;
 }
 
-
-
-.about-subtitle{
+.about-subtitle {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
-
-
-
-
-.container-about-list{
+.container-about-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.about-list{
+.about-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -35,7 +29,7 @@
   counter-reset: about;
 }
 
-.about-item{
+.about-item {
   counter-increment: about;
 
   border-radius: 16px;
@@ -53,7 +47,6 @@
   color: rgb(var(--text-color-primary));
 
   position: relative;
-
 }
 
 .about-item::before {
@@ -64,12 +57,11 @@
   line-height: 1.14;
   letter-spacing: -0.02em;
   font-weight: 700;
-color: rgb(var(--bg-color-secondary));
+  color: rgb(var(--bg-color-secondary));
   margin-bottom: 16px;
-
 }
 
-.container-img{
+.container-img {
   width: 100%;
   max-width: 335px;
   height: auto;
@@ -81,63 +73,54 @@ color: rgb(var(--bg-color-secondary));
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
-.about-img{
+.about-img {
   width: 254px;
   height: 211px;
-
 }
-
 
 /* Tablet */
 
 @media screen and (min-width: 768px) {
-  .section-about{
+  .section-about {
     padding-top: 100px;
   }
 
-
-
-  .about-subtitle{
+  .about-subtitle {
     max-width: 658px;
   }
 
-
-
-  .container-about-list{
+  .container-about-list {
     gap: 32px;
   }
 
-  .about-list{
+  .about-list {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
   }
 
-  .about-item{
+  .about-item {
     border-radius: 30px;
     width: calc((100% - 1 * 32px) / 2);
   }
 
-  .container-img{
+  .container-img {
     max-width: 704px;
     aspect-ratio: 704 / 243;
     border-radius: 30px;
   }
-
 }
-
 
 /* Desktop */
 
 @media screen and (min-width: 1280px) {
-  .section-about{
+  .section-about {
     padding-top: 96px;
   }
 
-  .container-about-list{
+  .container-about-list {
     flex-direction: row;
     /* align-items: center; */
     align-items: flex-start;
@@ -145,24 +128,22 @@ color: rgb(var(--bg-color-secondary));
     gap: 32px;
   }
 
-  .about-list{
+  .about-list {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
     width: calc(2 * 325px + 32px);
   }
 
-  .about-item{
+  .about-item {
     width: 325px;
     height: 160px;
-
   }
 
-  .container-img{
+  .container-img {
     flex-shrink: 0;
     width: 310px;
     aspect-ratio: 310 / 352;
   }
-
 }
 /* ========== /ABOUT US ========== */

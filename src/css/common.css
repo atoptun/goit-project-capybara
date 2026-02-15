@@ -22,6 +22,10 @@ body {
   overflow: hidden;
 }
 
+section[id] {
+  scroll-margin-top: 50px;
+}
+
 .section {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -73,6 +77,10 @@ body {
   body {
     font-size: 16px;
     line-height: 1.5;
+  }
+
+  section[id] {
+    scroll-margin-top: 50px;
   }
 
   .section {
