@@ -11,15 +11,18 @@
   margin-right: auto;
 
   /* fallback */
-  background-image: url('../images/hero/bg-hero-mobile.jpg');
-
+  background-image: url('/images/hero/bg-hero-mobile.jpg');
+    background-image: -webkit-image-set(
+      url(/images/hero/webp/bg-hero-mobile.webp) 1x,
+      url(/images/hero/webp/bg-hero-mobile@2x.webp) 2x
+    );
   background-image: image-set(
-    url('../images/hero/avif/bg-hero-mobile.avif') type('image/avif') 1x,
-    url('../images/hero/avif/bg-hero-mobile@2x.avif') type('image/avif') 2x,
-    url('../images/hero/webp/bg-hero-mobile.webp') type('image/webp') 1x,
-    url('../images/hero/webp/bg-hero-mobile@2x.webp') type('image/webp') 2x,
-    url('../images/hero/bg-hero-mobile.jpg') type('image/jpeg') 1x,
-    url('../images/hero/bg-hero-mobile@2x.jpg') type('image/jpeg') 2x
+    url('/images/hero/avif/bg-hero-mobile.avif') type('image/avif') 1x,
+    url('/images/hero/avif/bg-hero-mobile@2x.avif') type('image/avif') 2x,
+    url('/images/hero/webp/bg-hero-mobile.webp') type('image/webp') 1x,
+    url('/images/hero/webp/bg-hero-mobile@2x.webp') type('image/webp') 2x,
+    url('/images/hero/bg-hero-mobile.jpg') type('image/jpeg') 1x,
+    url('/images/hero/bg-hero-mobile@2x.jpg') type('image/jpeg') 2x
   );
   background-size: cover;
   background-position: center;
@@ -37,15 +40,18 @@
     max-width: 704px;
 
     /* fallback */
-    background-image: url('../images/hero/bg-hero-tablet.jpg');
-
+    background-image: url('/images/hero/bg-hero-tablet.jpg');
+    background-image: -webkit-image-set(
+      url(/images/hero/webp/bg-hero-tablet.webp) 1x,
+      url(/images/hero/webp/bg-hero-tablet@2x.webp) 2x
+    );
     background-image: image-set(
-      url('../images/hero/avif/bg-hero-tablet.avif') type('image/avif') 1x,
-      url('../images/hero/avif/bg-hero-tablet@2x.avif') type('image/avif') 2x,
-      url('../images/hero/webp/bg-hero-tablet.webp') type('image/webp') 1x,
-      url('../images/hero/webp/bg-hero-tablet@2x.webp') type('image/webp') 2x,
-      url('../images/hero/bg-hero-tablet.jpg') type('image/jpeg') 1x,
-      url('../images/hero/bg-hero-tablet@2x.jpg') type('image/jpeg') 2x
+      url('/images/hero/avif/bg-hero-tablet.avif') type('image/avif') 1x,
+      url('/images/hero/avif/bg-hero-tablet@2x.avif') type('image/avif') 2x,
+      url('/images/hero/webp/bg-hero-tablet.webp') type('image/webp') 1x,
+      url('/images/hero/webp/bg-hero-tablet@2x.webp') type('image/webp') 2x,
+      url('/images/hero/bg-hero-tablet.jpg') type('image/jpeg') 1x,
+      url('/images/hero/bg-hero-tablet@2x.jpg') type('image/jpeg') 2x
     );
 
     border-radius: 30px;
@@ -60,15 +66,19 @@
     padding-bottom: 163px;
 
     /* fallback */
-    background-image: url('../images/hero/bg-hero-desktop.jpg');
+    background-image: url('/images/hero/bg-hero-desktop.jpg');
+    background-image: -webkit-image-set(
+      url(/images/hero/webp/bg-hero-desktop.webp) 1x,
+      url(/images/hero/webp/bg-hero-desktop@2x.webp) 2x
+    );
 
     background-image: image-set(
-      url('../images/hero/avif/bg-hero-desktop.avif') type('image/avif') 1x,
-      url('../images/hero/avif/bg-hero-desktop@2x.avif') type('image/avif') 2x,
-      url('../images/hero/webp/bg-hero-desktop.webp') type('image/webp') 1x,
-      url('../images/hero/webp/bg-hero-desktop@2x.webp') type('image/webp') 2x,
-      url('../images/hero/bg-hero-desktop.jpg') type('image/jpeg') 1x,
-      url('../images/hero/bg-hero-desktop@2x.jpg') type('image/jpeg') 2x
+      url('/images/hero/avif/bg-hero-desktop.avif') type('image/avif') 1x,
+      url('/images/hero/avif/bg-hero-desktop@2x.avif') type('image/avif') 2x,
+      url('/images/hero/webp/bg-hero-desktop.webp') type('image/webp') 1x,
+      url('/images/hero/webp/bg-hero-desktop@2x.webp') type('image/webp') 2x,
+      url('/images/hero/bg-hero-desktop.jpg') type('image/jpeg') 1x,
+      url('/images/hero/bg-hero-desktop@2x.jpg') type('image/jpeg') 2x
     );
   }
 }
