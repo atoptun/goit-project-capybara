@@ -51,6 +51,7 @@ function sectionsObserver() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const id = entry.target.getAttribute('id');
+        if (!id) return;
 
         navLinks.forEach(link => {
           link.classList.remove('current');
